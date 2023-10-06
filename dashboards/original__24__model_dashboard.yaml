@@ -1,0 +1,53 @@
+# Visit https://docs.rilldata.com/reference/project-files to learn more about Rill project files.
+
+title: original__24__model_dashboard
+model: original__24__model
+timeseries: ""
+measures:
+  - label: Total records
+    expression: count(*)
+    name: total_records
+    description: Total number of records present
+    format_preset: humanize
+    valid_percent_of_total: true
+dimensions:
+  - name: state_file_id
+    label: State_file_id
+    column: state_file_id
+    description: ""
+  - name: registered_address.state
+    label: Registered_address.state
+    column: registered_address.state
+    description: ""
+  - name: custom_fields.voted
+    label: Custom_fields.voted
+    column: custom_fields.voted
+    description: ""
+  - name: tag_list
+    label: Tag_list
+    column: tag_list
+    description: ""
+  - name: split_part(tag_list, ',', 0)
+    label: Split_part(tag_list, ',', 0)
+    column: split_part(tag_list, ',', 0)
+    description: ""
+  - name: split_part(tag_list, ',', 1)
+    label: Split_part(tag_list, ',', 1)
+    column: split_part(tag_list, ',', 1)
+    description: ""
+  - name: split_part(tag_list, ',', 2)
+    label: Split_part(tag_list, ',', 2)
+    column: split_part(tag_list, ',', 2)
+    description: ""
+available_time_zones:
+  - America/Los_Angeles
+  - America/Chicago
+  - America/New_York
+  - Europe/London
+  - Europe/Paris
+  - Asia/Jerusalem
+  - Europe/Moscow
+  - Asia/Kolkata
+  - Asia/Shanghai
+  - Asia/Tokyo
+  - Australia/Sydney

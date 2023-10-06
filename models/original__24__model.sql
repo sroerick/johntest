@@ -1,0 +1,1 @@
+select *, split_part(tag_list, ',', 0), split_part(tag_list, ',', 1),split_part(tag_list, ',', 2) from original__24_
